@@ -47,7 +47,7 @@
 
 #status
 
--git status 查看当前状态，包括add,commit,modify,merge等信息
+- git status 查看当前状态，包括add,commit,modify,merge等信息
 
 #Tag
 
@@ -68,22 +68,19 @@
 
 #Diff
 
-显示2个分支之间的差异 git diff master..test
+- git diff master..test 显示2个分支之间的差异 
 
 #忽略
 
 根目录先创建一个.gitignore 的文件 # 以'#' 开始的行，被视为注释. # 忽略掉所有文件名是 foo.txt 的文件. foo.txt # 忽略所有生成的 html 文件, *.html # foo.html是手工维护的，所以例外. !foo.html # 忽略所有.o 和 .a文件. *.[oa]
 
-#其他
+#合并特定的文件
 
-##合并特定的文件
+- git cherry-pick #commitid
 
-使用命令 git cherry-pick #commitid
-checkout方法 git checkout branch -- filename
+#查看今天的更改
 
-##查看今天的更改
-
-git log --since=1.days
+- git log --since=1.days
 
 #注
 本文档内容根据[liluo](http://liluo.me/2015/03/11/git-learn.html)整理、添加。
