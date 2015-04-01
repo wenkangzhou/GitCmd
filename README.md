@@ -19,6 +19,14 @@
 - git rm file 将file从文件缓存区、本地目录中移除
 - git rm file --cached 只从缓存区移除，保存本地目录中的
 
+#提交
+
+- git commit 提交的是暂存区里面的内容，也就是 Changes to be committed 中的文件
+- git commit -a 除了将暂存区里的文件提交外，还提交 Changes bu not updated 中的文件。
+- git commit -m "commit info" 给提交内容添加注释
+- git commit -am "commit info" 整合了git add和git commit -m
+- git commit --amend 修改上一次提交的信息
+
 #分支
 
 - git branch 列出可用的分支
@@ -37,6 +45,10 @@
 - git log --grep 正则取一个log
 - git shortlog master 生成一个简报
 
+#status
+
+-git status 查看当前状态，包括add,commit,modify,merge等信息
+
 #Tag
 
 - git tag -a v1.0 打上v1.0
@@ -53,21 +65,25 @@
 #冲突
 
 手动修改冲突，然后git add filename; git commit
+
 #Diff
 
 显示2个分支之间的差异 git diff master..test
+
 #忽略
 
 根目录先创建一个.gitignore 的文件 # 以'#' 开始的行，被视为注释. # 忽略掉所有文件名是 foo.txt 的文件. foo.txt # 忽略所有生成的 html 文件, *.html # foo.html是手工维护的，所以例外. !foo.html # 忽略所有.o 和 .a文件. *.[oa]
+
 #其他
 
 ##合并特定的文件
 
 使用命令 git cherry-pick #commitid
 checkout方法 git checkout branch -- filename
+
 ##查看今天的更改
 
 git log --since=1.days
 
 #注
-内容转自[liluo](http://liluo.me/2015/03/11/git-learn.html)
+本文档内容根据[liluo](http://liluo.me/2015/03/11/git-learn.html)整理、添加。
