@@ -1,6 +1,8 @@
 #基本功能
 
-设置自己的用户名和邮箱 git config –global user.name "Your Name" git config –global user.email "your@email.com"
+设置自己的用户名和邮箱 
+- git config –global user.name "Your Name" 
+- git config –global user.email "Your Email"
 
 #本地缓存
 
