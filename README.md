@@ -79,7 +79,7 @@
 - git cherry-pick #commitid
 
 #回退到特定版本
--git reset --hard HEAD~3 会将最新的3次提交全部重置
+- git reset --hard HEAD~3 会将最新的3次提交全部重置
 
 #查看今天的更改
 
