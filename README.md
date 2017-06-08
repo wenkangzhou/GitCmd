@@ -79,11 +79,16 @@
 - git cherry-pick #commitid
 
 #回退到特定版本
+
 - git reset --hard HEAD~3 会将最新的3次提交全部重置
 
 #查看今天的更改
 
 - git log --since=1.days
+
+#未commit的文件回退到同线上一致的状态
+
+-  git checkout 文件路径
 
 #注
 本文档内容根据[liluo](http://liluo.me/2015/03/11/git-learn.html)整理、添加。
